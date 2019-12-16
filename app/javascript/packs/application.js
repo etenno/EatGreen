@@ -17,3 +17,4 @@
 
 import { searchResults } from "./search.js.erb";
 // searchResults();
+import 'bootstrap';

@@ -1,0 +1,14 @@
+const searchResults = () => {
+  const searchButton = document.querySelector(".btn-search");
+  const resultsOfSearch = document.querySelector('.results-of-search');
+  const food = document.querySelector('#diet_food');
+
+  const results = (event) => {
+    console.log(food.value)
+    resultsOfSearch.insertAdjacentHTML("beforeend", `<h1>food </h1>`);
+  };
+
+  searchButton.addEventListener("click", results);
+};
+
+export { searchResults };
