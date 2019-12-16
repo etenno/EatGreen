@@ -15,5 +15,5 @@
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-import { searchResults } from "./search";
-searchResults();
+import { searchResults } from "./search.js.erb";
+// searchResults();

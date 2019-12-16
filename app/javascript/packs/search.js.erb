@@ -1,12 +1,15 @@
 const searchResults = () => {
   const searchButton = document.querySelector(".btn-search");
+  const e = document.querySelector("#diet_food");
 
 
   const results = (event) => {
     console.log("clicked")
-    event.preventDefault();
 
-    console.log(@one_year_emissions)
+    var value = e.options[e.selectedIndex].value;
+    var text = e.options[e.selectedIndex].text;
+    console.log()
+    event.preventDefault();
 
   };
 
