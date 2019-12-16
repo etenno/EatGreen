@@ -1,0 +1,19 @@
+<div class="home-banner">
+  <div class="results-container">
+    <h1><%= @one_year_emissions %>kg of CO2 in one year</h1>
+    <div class="travel-figures">
+      <div class="travel-container">
+        <p>You can travel around <%= @car_km.floor %>km by car</p>
+      </div>
+      <div class="travel-container">
+        <p>You can travel around <%= @domestic_flight_km.floor %>km on a domestic flight</p>
+      </div>
+      <div class="travel-container">
+        <p>You can travel around <%= @short_flight_km.floor %>km by short haul flight</p>
+      </div>
+      <div class="travel-container">
+        <p>You can travel around <%= @long_flight_km.floor %>km by long haul flight</p>
+      </div>
+    </div>
+  </div>
+</div>

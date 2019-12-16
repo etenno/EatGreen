@@ -1,0 +1,25 @@
+<div class="home-banner">
+  <div class="home-container">
+
+    <h1>Welcome to EatGreen</h1>
+
+    <p>Fill in the form below in order to see how your diet affects the planet!</p>
+
+    <div class="">
+      <%= simple_form_for :diet, remote: true, url: root_path, method: "GET" do |f| %>
+        <div class="p-3">
+          <div class="home-form inline-block d-flex">
+            <%= f.input :food, collection: ["Beef", "Lamb", "Cheese", "Farmed Salmon", "Turkey", "Chicken", "Canned Tuna", "Eggs", "Potatoes", "Rice", "Peanut Butter", "Rice", "Nuts", "Yogurt", "Broccoli", "Tofu", "Dry Beans", "Milk (2%)", "Tomatoes", "Lentils"] %><%= f.input :amount, collection: [["Once a month", 12], ["Once a week", 52], ["3 times a week", 156], ["Once a day", 365], ["Every meal", 1095]] %>
+
+          <!-- :amount tracks the amount of times the specific food is eaten in a year -->
+          </div>
+
+        <%= f.button :submit, "Search", class: "btn btn-dark btn-search" %>
+
+        </div>
+
+      <% end %>
+    </div>
+  </div>
+
+</div>
