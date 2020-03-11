@@ -2,17 +2,20 @@
   <div class="results-container">
     <h1 class="mb-3"><%= @one_year_emissions.floor %>kg of CO2 per year</h1>
     <h3>The same amount of CO2 is produced by... </h3>
-    <div class="travel-figures mt-5">
-      <div class="travel-container m-5">
+    <div class="travel-figures mt-4">
+      <div class="travel-container m-4">
         <p>...travelling around <br> <%= @car_km.floor %>km <br> by car</p>
       </div>
-      <div class="travel-container m-5">
+      <div class="travel-container m-4">
+        <p>...travelling around <br> <%= @train_km.floor %>km <br> by train</p>
+      </div>
+      <div class="travel-container m-4">
         <p>...travelling around <br> <%= @domestic_flight_km.floor %>km <br> on a domestic flight</p>
       </div>
-      <div class="travel-container m-5">
+      <div class="travel-container m-4">
         <p>...travelling around <br> <%= @short_flight_km.floor %>km <br> by short haul flight</p>
       </div>
-      <div class="travel-container m-5">
+      <div class="travel-container m-4">
         <p>...travelling around <br> <%= @long_flight_km.floor %>km <br> by long haul flight</p>
       </div>
     </div>

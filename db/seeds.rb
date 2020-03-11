@@ -27,6 +27,7 @@ Food.create(name: 'Lentils', emissions: '0.9', average_amount: "0.3")
 # https://www.ewg.org/meateatersguide/a-meat-eaters-guide-to-climate-change-health-what-you-eat-matters/climate-and-environmental-impacts/
 
 Transport.create(name: 'Car', emissions: '0.267') # from carbon independent (originally 0.43 per mile)
+Transport.create(name: 'Train', emissions: '0.02') # emissions per person per km
 Transport.create(name: 'Flight (Domestic)', emissions: '0.316')
 Transport.create(name: 'Flight (Short Haul)', emissions: '0.260')
 Transport.create(name: 'Flight (Long Haul)', emissions: '0.21')
