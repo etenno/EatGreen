@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_11_212015) do
+ActiveRecord::Schema.define(version: 2020_03_11_213135) do
 
   create_table "foods", force: :cascade do |t|
     t.string "name"
@@ -23,6 +23,8 @@ ActiveRecord::Schema.define(version: 2020_03_11_212015) do
   create_table "meals", force: :cascade do |t|
     t.string "name"
     t.integer "frequency"
+    t.integer "food_id"
+    t.index ["food_id"], name: "index_meals_on_food_id"
   end
 
   create_table "transports", force: :cascade do |t|
